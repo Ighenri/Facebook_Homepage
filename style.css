@@ -7,8 +7,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #ecf3ff;;
-
+    background-color: #ecf3ff;
+    overflow: hidden;
 }
 .container{
     max-width: 1300px !important;
@@ -22,6 +22,7 @@ header{
     right: 0;
     height: 8vh;
     background-color: #ffffff;
+    z-index: 1000;
 }
 
 .left_navbar{
@@ -71,11 +72,12 @@ header{
     background: transparent;
 }
 .center_navbar_btn:hover{
-    background-color: #ecf3ff;
+    background-color: #dadbdd;
     border-radius: 5px;
 }
 .center_navbar_btn.active{
     border-bottom: 3px solid #1b74e4;
+    color: #1b74e4;
 
 }
 .center_navbar_btn.active:hover{
@@ -119,6 +121,77 @@ header{
 }
 
 .myid img{
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border: none;
+}
+
+.left_sidebar{
+    height: 98vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 2.5rem;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c0c1c4;
+    border-radius: 5px;
+}
+
+.left_sidebar_nav {
+    width: 100%;
+    padding-bottom: .7rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+.left_sidebar_nav:hover{
+    background-color: #d0d1d4;
+    border-radius: 5px;
+}
+
+.left_sidebar_nav a{
+    text-decoration: none;
+    text-align: center;
+}
+.left_sidebar_nav img{
+    border-radius: 2rem;
+}
+
+.left_sidebar_nav i{
+    font-size: 1rem;
+    color: #1b74e4;
+}
+
+.left_sidebar_nav span{
+    padding-left: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.see_more{
+    width: 5.6rem;
+   border: none;
+   display: flex;
+   align-items: center;
+   padding-top: .8rem;
+   padding-bottom: .8rem;
+   font-weight: 700;
+}
+.see_more span{
+    font-size: 1rem;
+}
+.see_more i{
+    font-size: 1.2rem;
+    border-radius: 1rem;
 }
