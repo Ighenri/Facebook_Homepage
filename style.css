@@ -21,7 +21,7 @@
 }
 
 body{
-    background-color: #ecf3ff;
+    background-color:#f0f2f5;
     overflow: hidden;
 }
 .container{
@@ -197,6 +197,238 @@ header{
     font-size: 1.2rem;
     border-radius: 1rem;
 }
+
+.center{
+    padding-top: 4rem;
+    width: 500px;
+    height: 99vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.headline_profile{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.profile1{
+    display: flex;
+    align-items: center;
+}
+.profile1 img{
+    width: 40px;
+    border-radius: 2rem;
+}
+.profile1 .get{
+    width: 100%;
+    background-color:#f0eeee;
+    margin: .9rem .5rem;
+    display: flex;
+    align-items: center;
+    padding: .3rem .6rem;
+    border-radius: 1rem;
+}
+.get input{
+    padding: .3rem 0;
+    flex: 1;
+    padding-left: .9rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.get:hover{
+    background-color: #e6e6e6;
+}
+
+.media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.media button{
+    padding: .3rem 1rem;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+.media button:hover{
+    background-color:#e6e6e6;
+    border-radius: 5px;
+}
+.media button .red{
+    color: red;
+    font-size: 1.5rem;
+    padding-right: .4rem;
+}
+.media button .green{
+    color: rgb(38, 226, 38);
+    font-size: 1.5rem;
+    padding-right: .4rem;
+}
+.media button .orange{
+    color: orange;
+    font-size: 1.5rem;
+    padding-right: .4rem;
+}
+.center_post{
+    background-color: #ffffff;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.center_name{
+    padding-bottom: .8rem;
+    padding-left: 1rem;
+}
+.center_name img{
+    width: 40px;
+   border-radius: 2rem;
+}
+.info{
+    padding-left: 1rem;
+    padding-right: 9rem;
+    text-decoration: none;
+}
+.info p{
+    color: #000000;
+    font-weight: 700;
+}
+.info p:hover{
+    text-decoration: underline;
+}
+.info div span{
+    color: #95979b;
+    font-weight: 700;
+}
+.info div span:hover{
+    text-decoration: underline;
+}
+.info div{
+    font-size: .9rem;
+}
+
+.center_name .xmark i{
+    color: #95979b;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+.user_writeup{
+    width: 90%;
+    padding-left: 1rem;
+}
+
+.user_post_cont img{
+    width: 100%;
+}
+.like_stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+.reactions{
+    align-items: center;
+}
+.reactions .like{
+    color: white;
+    background-color:#1b74e4;
+    padding: 2px;
+    border-radius: 1rem;
+}
+.reactions .heart{
+    color: white;
+    background-color: #fa778f;
+    padding: 2px;
+    border-radius: 1rem;
+    margin: -5px;
+}
+.reactions span{
+    font-weight: 500;
+    padding-left: .5rem;
+}
+.reactions span:hover{
+    text-decoration: underline;
+}
+.comments{
+    font-weight: 500;
+    color: #95979b;
+    font-size: 1rem;
+}
+.comments:hover{
+    text-decoration: underline;
+}
+
+.user_likes{
+    display: flex;
+    justify-content: space-around;
+   padding: .3rem 0;
+}
+.user_likes button{
+    display: flex;
+    padding: .5rem 1.5rem;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    align-items: center;
+}
+.user_likes button:hover{
+    background-color:#d3d0d0;
+    border-radius: 5px;
+}
+.user_likes i{
+   padding: 0 .5rem;
+}
+.footer{
+    padding: 1rem;
+}
+.owner_profile{
+    display: flex;
+    align-items: center;
+}
+.owner_profile img{
+    width: 35px;
+    border-radius: 1rem;
+    margin-right: .3rem;
+}
+.write_comment{
+    background-color:#d4d4d4;
+    padding: .3rem 0.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+.write_comment input{
+    flex: 1;
+    padding: .3rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #000000;
+    font-weight: 600;
+}
+.write_comment button{
+    border: none;
+    padding: .2rem .4rem;
+    margin: 0 .1rem;
+    background: transparent;
+}
+.write_comment button:hover{
+    background-color:#b5b6b8;
+    border-radius: 1rem;
+}
+.write_comment button i{
+    font-size: 1rem;
+}
+
 .right_sidebar{
     padding-top: 5rem;
     padding-right: 1rem;
@@ -349,7 +581,8 @@ header{
 .contact_name{
     display: flex; 
     align-items: center;
-    padding: .2rem 0;
+    padding-top: .2rem;
+    
 }
 .contact_name:hover{
     background-color:#dadbdf;
