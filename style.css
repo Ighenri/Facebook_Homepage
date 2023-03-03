@@ -37,6 +37,7 @@ header{
     height: 8vh;
     background-color: #ffffff;
     z-index: 1000;
+    width: 100%;
 }
 
 .left_navbar{
@@ -71,6 +72,9 @@ header{
     border: none;
     outline: none;
     font-size: 1rem;
+}
+.small{
+    display: none;
 }
 
 .center_navbar{
@@ -133,7 +137,10 @@ header{
     text-align: center;
     text-decoration: none;
 }
-
+.dnt,
+.dnts{
+    display: none;
+}
 .myid img{
     border-radius: 1.5rem;
     border: none;
@@ -248,7 +255,7 @@ header{
     align-items: center;
 }
 .media button{
-    padding: .3rem 1rem;
+    padding: .3rem .5rem;
     background: transparent;
     border: 0;
     outline: 0;
@@ -261,17 +268,17 @@ header{
     border-radius: 5px;
 }
 .media button .red{
-    color: red;
+    color: #ff0000;
     font-size: 1.5rem;
     padding-right: .4rem;
 }
 .media button .green{
-    color: rgb(38, 226, 38);
+    color: #26e226;
     font-size: 1.5rem;
     padding-right: .4rem;
 }
 .media button .orange{
-    color: orange;
+    color: #ffa500;
     font-size: 1.5rem;
     padding-right: .4rem;
 }
@@ -431,7 +438,7 @@ header{
 
 .right_sidebar{
     padding-top: 5rem;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
     width: 350px;
     height: 99vh;
     padding-left: .7rem;
@@ -523,7 +530,7 @@ header{
     
 }
 .flex_ p{
-    padding-right: 6rem;
+    padding-right: 5rem;
     font-weight: 700;
 }
 .flex_ span{
@@ -586,4 +593,66 @@ header{
 }
 .contact_name:hover{
     background-color:#dadbdf;
+}
+
+
+@media(max-width: 1198px) {
+    .container{
+        max-width: 1200px !important;
+        margin: 0 auto;
+    }
+    .left_sidebar{
+         display: none;
+    }
+    .center{
+        margin-left: 2rem;
+    }
+    .right_sidebar{
+     margin-left: 2rem;
+    }
+    .left_navbar_input{
+        display: none;
+    }
+    .right_navbar .dnt{
+        display: flex;
+    }
+    .dnts{
+        display: flex;
+    }
+
+    .right_navbar .do{
+        display: none;
+    }
+    .ri-gamepad-line{
+        display: none;
+    }
+}
+@media(max-width: 933px) {
+    .container{
+        max-width: 900px !important;
+        margin: 0;
+        margin-left: 5rem;
+        
+    }
+    .right_sidebar{
+        display: none;
+    }
+    main{
+        padding-top: .4rem;
+    }
+
+    .small{
+        display: flex;
+        font-size: 1.5rem;
+        padding-left: .5rem;
+    }
+    .center_navbar button{
+        display: none;
+    }
+}
+
+@media(max-width: 516pc) {
+    .container{
+        margin: 0;
+    }
 }
